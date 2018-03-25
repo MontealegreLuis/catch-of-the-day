@@ -28,7 +28,7 @@ class EditFishForm extends React.Component {
                     placeholder="Description"
                 />
                 <input name="image" value={this.props.fish.image} onChange={this.updateFish} placeholder="Image"/>
-                <button type="submit">Update Fish</button>
+                <button type="submit" onClick={() => this.props.deleteFish(this.props.index)}>Remove Fish</button>
             </form>
         );
     }
