@@ -7,8 +7,10 @@ import {formatPrice} from '../helpers';
 class Order extends React.Component {
     renderOrderItem = (fishId) => {
         const fish = this.props.fishes[fishId];
+        if (!fish) return null;
+
         const amount = this.props.order[fishId];
-        const isAvailable = fish && fish.status === 'available';
+        const isAvailable = fish.status === 'available';
 
         if (!isAvailable) return <li key={fishId}>Sorry {fish ? fish.name : 'fish'} is no longer available</li>;
 
