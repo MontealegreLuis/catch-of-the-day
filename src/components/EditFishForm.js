@@ -2,8 +2,21 @@
  * This source file is subject to the license that is bundled with this package in the file LICENSE.
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class EditFishForm extends React.Component {
+    static propTypes = {
+        index: PropTypes.string,
+        fish: PropTypes.shape({
+            image: PropTypes.string,
+            name: PropTypes.string,
+            desc: PropTypes.string,
+            status: PropTypes.string,
+            price: PropTypes.number
+        }),
+        updateFish: PropTypes.func
+    };
+
     updateFish = (event) => {
         const updatedFish = {
             ...this.props.fish,

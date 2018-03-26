@@ -2,6 +2,7 @@
  * This source file is subject to the license that is bundled with this package in the file LICENSE.
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Header = ({tagline}) => (
     <header className="top">
@@ -18,5 +19,9 @@ const Header = ({tagline}) => (
         </h3>
     </header>
 );
+
+Header.propTypes = {
+    tagline: PropTypes.string.isRequired
+};
 
 export default Header;

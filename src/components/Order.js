@@ -2,10 +2,17 @@
  * This source file is subject to the license that is bundled with this package in the file LICENSE.
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 import {formatPrice} from '../helpers';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
 class Order extends React.Component {
+    static propTypes = {
+        fishes: PropTypes.object,
+        order: PropTypes.object,
+        removeFromOrder: PropTypes.func
+    };
+
     renderOrderItem = (fishId) => {
         const fish = this.props.fishes[fishId];
         if (!fish) return null;
