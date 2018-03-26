@@ -1,5 +1,7 @@
 # Catch of the Day
 
+[![codebeat badge][codebeat-badge]](codebeat)
+
 ReactJS application built in this awesome [React][react] course.
 
 ## Installation
@@ -39,3 +41,5 @@ You can add/remove from an order. You can also edit/add or remove fishes from th
 [facebook]: https://developers.facebook.com/
 [twitter]: https://apps.twitter.com/
 [github]: https://github.com/settings/applications/new
+[codebeat-badge]: https://codebeat.co/badges/7c740ebe-14f2-41f8-8524-803127ef025b
+[codebeat]: https://codebeat.co/projects/github-com-montealegreluis-catch-of-the-day-master
